@@ -1,7 +1,8 @@
-docker-compose build
-docker-compose up
+Build and test
 
-```
+```sh
+docker-compose up --build
+
 # get from gunicorn
 curl localhost:8083
 

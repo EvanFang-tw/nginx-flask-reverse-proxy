@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 # copy project
 COPY ./hello.py /app
 EXPOSE 8083
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8083", "hello:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8083", "hello:app", "--timeout", "5"]
